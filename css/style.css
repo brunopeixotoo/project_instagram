@@ -4,3 +4,109 @@
     margin: 0;
     outline: 0;
 }
+
+a {
+    color: #3c96ed;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fafafa;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    /*Altura da linha*/
+    line-height: 18px;
+}
+
+#wrapper {
+    height: 100vh;
+}
+
+#container {
+    margin: 0 auto;
+    min-height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    /*Definindo para as colunas disputarem o mesmo espaço*/
+    flex-grow: 1;
+    width: 50%;
+}
+/*Aplicando edições na div left*/
+.left {
+    background-image: url("../assets/main-foto.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 50px;
+
+}
+/*Aplicando edições na div right*/
+.right {
+    padding-left: 20px;
+}
+
+.login-panel {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*Ajustando tamanho da imagem*/
+.logo-img {
+    width: 150px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+/*Ajustando formulário*/
+.login-panel form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Ajustando os inputs*/
+.login-panel form input[type="text"], input[type="password"] {
+    height: 40px;
+    width: 70%;
+    padding: 10px 5px;
+    margin: 5px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+/*Ajustando o input de type 'subimit'*/
+.login-panel form input[type="submit"] {
+    color: white;
+    padding: 8px 8px;
+    margin-top: 10px;
+    height: 35px;
+    width: 70%;
+    background-color: #1d83e2;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*Alterando a cor dos placeholder*/
+.login-panel form input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: gray;
+}
+
+/*Destacando a borda quando estiver em foco o preenchimento*/
+.login-panel form input[type="text"]:focus, input[type="password"]:focus {
+    outline: 0;
+    border: 1px solid rgb(102, 100, 100);
+}
