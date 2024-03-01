@@ -97,7 +97,8 @@ body {
     border: none;
     border-radius: 4px;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 /*Alterando a cor dos placeholder*/
@@ -109,4 +110,75 @@ body {
 .login-panel form input[type="text"]:focus, input[type="password"]:focus {
     outline: 0;
     border: 1px solid rgb(102, 100, 100);
+}
+
+/*Link de cadastro*/
+.infobox{
+    background-color: white;
+    font-size: 13px;
+    height: 60px;
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e6e6e6;
+}
+.infobox p {
+    user-select: none;/*Tirando a opção do usuário copiar*/
+}
+/*Diexando o link em negrito*/
+.infobox p a {
+    font-weight: bold;
+    user-select: none;
+}
+
+/*Imagens das lojas de Login*/
+
+.get-painel {
+    margin-top: 10px;
+}
+
+.get-painel p{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.app-button a{
+    margin: 0 10px;
+}
+.app-button a img {
+    width: 140px;
+}
+
+/*Fim das edições dentro da right*/
+/*Início do rodapé*/
+
+footer {
+    font-size: 13px;
+    text-align: center;
+}
+
+.footer-inner {
+    margin-bottom: 40px;
+    margin-top: -50px;
+}
+.footer-inner a{
+    font-weight: bold;
+    margin: 8px;
+    color: black;
+    text-transform: uppercase; /*Deixando todas as palavras em maiúsculo*/
+}
+
+.text-small {
+    margin-left: 80px;
+    color: gray;
+    text-transform: uppercase;
+    display: inline-block; /*vai forçar a tag a ficar em linha com os outros*/
 }
