@@ -1,0 +1,55 @@
+/*ÁREA DE LOGIN COM FACEBOOK*/
+
+#container-signup {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.messege {
+    margin: 10px 70px;
+}
+.messege span{
+    font-size: 17px;
+    color: #8e8e8e;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    user-select: none;
+}
+
+.login-facebook {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 70%;
+    margin: 25px;
+    margin-bottom: 30px;
+    background-color: #1d83e2;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.divisor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.line {
+    height: 1px;
+    background-color: #e6e6e6;
+    width: 35%;
+}
+
+.divisor-tag {
+    width: 10%;
+    font-weight: bold;
+    color: #8e8e8e;
+    user-select: none;
+}
