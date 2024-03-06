@@ -1,0 +1,27 @@
+@media (max-width: 500px) {
+
+    /*Página Inicial*/
+    .left {
+        display: none;
+    }
+    
+    #container {
+        width: 90%;
+    }
+
+    .right {
+        height: 500px;
+        padding-left: 0;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+    
+    .footer-inner a{
+        margin: 5px;
+    }
+
+    /*Página de Cadastro*/
+    
+}
