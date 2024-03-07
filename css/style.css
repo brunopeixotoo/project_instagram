@@ -11,7 +11,16 @@ a {
 }
 
 body {
-    background-color: #fafafa;
+    /*Aplicando variáveis as cores*/
+    --background: #fafafa;
+    --white: #ffffff;
+    --color-border: #e6e6e6;
+    --gray: gray;
+    --color-button: #1d83e2;
+    --color-8e: #8e8e8e;
+
+
+    background-color: var(--background);
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -55,8 +64,8 @@ body {
 }
 
 .login-panel {
-    background-color: white;
-    border: 1px solid #e6e6e6;
+    background-color: var(--white);
+    border: 1px solid var(--color-border);
     text-align: center;
     padding: 20px 0;
 }
@@ -81,19 +90,19 @@ body {
     width: 70%;
     padding: 10px 5px;
     margin: 5px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid var(--color-border);
     border-radius: 3px;
     font-size: 13px;
 }
 
 /*Ajustando o input de type 'subimit'*/
 .login-panel form input[type="submit"] {
-    color: white;
+    color: var(--white);
     padding: 8px 8px;
     margin-top: 10px;
     height: 35px;
     width: 70%;
-    background-color: #1d83e2;
+    background-color: var(--color-button);
     border: none;
     border-radius: 4px;
     text-align: center;
@@ -103,25 +112,25 @@ body {
 
 /*Alterando a cor dos placeholder*/
 .login-panel form input[type="text"]::placeholder, input[type="password"]::placeholder {
-    color: gray;
+    color: var(--gray);
 }
 
 /*Destacando a borda quando estiver em foco o preenchimento*/
 .login-panel form input[type="text"]:focus, input[type="password"]:focus {
     outline: 0;
-    border: 1px solid rgb(102, 100, 100);
+    border: 1px solid var(--gray);
 }
 
 /*Link de cadastro*/
 .infobox{
-    background-color: white;
+    background-color: var(--white);
     font-size: 13px;
     height: 60px;
     margin-top: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #e6e6e6;
+    border: 1px solid var(--color-border);
 }
 .infobox p {
     user-select: none;/*Tirando a opção do usuário copiar*/
@@ -178,7 +187,7 @@ footer {
 
 .text-small {
     margin-left: 80px;
-    color: gray;
+    color: var(--gray);
     text-transform: uppercase;
     display: inline-block; /*vai forçar a tag a ficar em linha com os outros*/
 }

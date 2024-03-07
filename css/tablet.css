@@ -16,6 +16,13 @@
         padding-bottom: 40px;
     }
 
+    .get-painel {
+        margin-top: 1px;
+    }
+    .app-button {
+        margin-bottom: 100px;
+    }
+
     footer {
         font-size: 10px;
     }

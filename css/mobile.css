@@ -24,4 +24,15 @@
 
     /*Página de Cadastro*/
     
+    #container-signup {
+        width: 90%;
+    }
+    
+    .get-painel {
+        margin-top: 1px;
+    }
+
+    .app-button {
+        margin-bottom: 50px;
+    }
 }
